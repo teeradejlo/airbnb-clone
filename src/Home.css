@@ -1,0 +1,123 @@
+button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 9px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+button:hover {
+    background-color: #262626;
+    border-radius: 30px;
+}
+
+button[variant="icon"]:hover {
+    background-color: #262626;
+    border-radius: 50%;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    width: calc(100% - 160px);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 15px 80px 20px 80px;
+    align-items: center;
+    border-bottom: solid white 2px;
+}
+
+.header_left {
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    min-width: 225px;
+}
+
+.header_left > img {
+    object-fit: contain;
+    height: 32px
+}
+
+.header_middle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.header_mode {
+    display: flex;
+    justify-content: center;
+}
+
+.header_mode > div {
+    position: relative;
+    margin-left: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.header_mode > div:after {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 2px);
+    content:' ';
+    display:block;
+    border: 1px solid rgb(133, 133, 133);
+    width: 4px;
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+
+.header_mode > div:hover {
+    color: rgb(133, 133, 133);
+}
+
+.header_mode > div:hover:after{
+    border: 1px solid rgb(133, 133, 133);
+    transform: scale(1);
+}
+
+.header_inputinfo {
+    height: 50px;
+    width: 50%;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: antiquewhite;
+}
+
+.header_right {
+    position: absolute;
+    right: 80px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header_user_menu {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    line-height: 0;
+    margin-left: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    border: solid rgb(186, 186, 186) 1px;
+}
+
+.body_container {
+    width: 100vw;
+    height: 300vh;
+    background-color: black;
+}
