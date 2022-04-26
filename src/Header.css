@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: calc(100% - 160px);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 15px 80px 20px 80px;
+    align-items: center;
+    transition: background-color 0.4s, height 0.2s;
+}
+
+.header_left {
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    min-width: 225px;
+}
+
+.header_left > img {
+    object-fit: contain;
+    height: 32px
+}
+
+.header_middle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.header_mode {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header_mode > div {
+    position: relative;
+    margin-left: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.header_mode > div:after {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 2px);
+    content:' ';
+    display:block;
+    border-radius: 1px;
+    border: 1px solid;
+    width: 4px;
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+
+.header_mode > div:hover {
+    color: rgb(155, 155, 155);
+}
+
+.header_mode > div:hover:after{
+    transform: scale(1);
+}
+
+.header_mode > div[variant = "dark"]:hover {
+    color: rgb(155, 155, 155);
+}
+
+.header_mode > div[variant = "light"]:hover {
+    color: rgb(110, 110, 110);
+}
+
+.header_mode > div[variant = "dark"]:after {
+    border: 1px solid rgb(155, 155, 155);
+}
+
+.header_mode > div[variant = "light"]:after {
+    border: 1px solid rgb(110, 110, 110);
+}
+
+.header_inputinfo {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: solid rgb(186, 186, 186) 1px;
+    padding: 10px;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header_right {
+    position: absolute;
+    right: 80px;
+    top: 16.5px;
+    display: flex;
+    align-items: center;
+}
+
+.header_user_menu {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    line-height: 0;
+    margin-left: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    border: solid rgb(186, 186, 186) 1px;
+}
