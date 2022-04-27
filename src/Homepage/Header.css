@@ -1,25 +1,23 @@
 .header {
     display: flex;
     position: fixed;
-    width: calc(100% - 160px);
     top: 0;
     left: 0;
     z-index: 2;
-    padding: 15px 80px 20px 80px;
     align-items: center;
-    transition: background-color 0.4s, height 0.2s;
+    transition: background-color 0.2s, height 0.2s;
+    overflow-y: hidden;
 }
 
 .header_left {
     position: absolute;
     left: 80px;
-    top: 25px;
-    min-width: 225px;
+    top: 22px;
 }
 
 .header_left > img {
     object-fit: contain;
-    height: 32px
+    height: 32px;
 }
 
 .header_middle {
@@ -99,7 +97,7 @@
 .header_right {
     position: absolute;
     right: 80px;
-    top: 16.5px;
+    top: 13.5px;
     display: flex;
     align-items: center;
 }

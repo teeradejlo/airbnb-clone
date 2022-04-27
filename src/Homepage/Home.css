@@ -31,8 +31,20 @@ button[variant="lighticon"]:hover {
     border-radius: 50%;
 }
 
-.body_container {
-    width: 100vw;
-    height: 300vh;
-    background-color: black;
+.button_dim:hover {
+    background-color: #e3e3e3;
+}
+
+@media screen and (min-width: 1501px) {
+    .header {
+        padding: 12px 120px 12px 120px;
+        width: calc(100% - 240px);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .header {
+        padding: 12px 80px 12px 80px;
+        width: calc(100% - 160px);
+    }
 }

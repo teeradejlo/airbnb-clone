@@ -1,5 +1,6 @@
 import './Home.css';
 import Header from './Header';
+import Body from './Body';
 
 function Home() {
 
@@ -9,9 +10,7 @@ function Home() {
             <Header/>
 
             {/* Body */}
-            <div className="body_container">
-
-            </div>
+            <Body/>
         </div>
         
     );

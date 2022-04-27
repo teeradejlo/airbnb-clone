@@ -1,0 +1,121 @@
+.home_body {
+    width: 100%;
+    background-color: black;
+}
+
+.home_body_banner {
+    background-color: black;
+    width: calc(100% - 160px);
+    padding: 80px 80px 3% 80px;
+}
+
+.ukr_banner {
+    width: 100%;
+    aspect-ratio: 3.5/1;
+    background-color: rgb(255, 56, 92);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ukr_banner > span {
+    color: white;
+    font-size: 2.2em;
+    font-weight: 600;
+    max-width: 70%;
+    text-align: center;
+}
+
+button[variant="white_border"] {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 2%;
+    padding: 10px 20px 10px 20px;
+}
+
+.home_body_booking {
+    width: calc(100% - 160px);
+    padding: 3% 80px 3% 80px;;
+    background: linear-gradient(0deg, white 0 50%, black 50% 100%);
+}
+
+.booking_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px;
+    width: 100%;
+    aspect-ratio: 2/1;
+    background-image: url("https://a0.muscache.com/im/pictures/8aa32150-e831-40aa-98f5-b743b44c6b27.jpg?im_q=highq&im_w=2560");
+    background-position: center;
+    background-size: cover;
+}
+
+.booking_banner > span {
+    color: white;
+    font-size: 2.2em;
+    font-weight: 600;
+    max-width: 70%;
+    text-align: center;
+}
+
+button[variant="white_fill"] {
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding-top: min(2%, 20px);
+    padding-bottom: min(2%, 20px);
+    padding-right: min(4%, 35px);
+    padding-left: min(4%, 35px);
+}
+
+.text_grad_purplepink {
+    background: -webkit-linear-gradient(135deg, #ae1798 0%, rgb(150, 44, 196) 30%, rgb(93, 22, 117) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home_body_discover {
+    width: calc(100% - 160px);
+    padding: 3% 80px 80px 80px;;
+    background-color: white;
+}
+
+.home_body_discover_card_con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_body_card {
+    width: 48%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.home_body_card > div {
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    margin-left: 6%;
+    margin-top: 6%;
+}
+
+.home_body_card_button.button_dim {
+    margin-left: 6%;
+    margin-top: 4%;
+    border-radius: 10px;
+    font-weight: 600;
+}
